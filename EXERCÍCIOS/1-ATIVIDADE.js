@@ -1,5 +1,9 @@
-const prompt = require('prompt-sync')();
-
-// 1. Par ou ímpar
-let num = parseInt(prompt("Digite um número inteiro: "));
-console.log(num % 2 === 0 ? "Par" : "Ímpar");
+function verificarParImpar(num) {
+    if (num % 2 === 0) {
+      console.log(`${num} é par`);
+    } else {
+      console.log(`${num} é ímpar`);
+    }
+  }
+  
+  verificarParImpar(7);
